@@ -14,4 +14,12 @@ This pattern, therefore, promotes interface compatibility, ensuring that dispara
 
 Caching in the context of the Adapter Design Pattern is a performance optimization strategy meant to speed up the system. It involves storing the results of complex calculations the first time they're computed. These results are stored in a cache with a unique key, often a hash value. When the adapter is called again with the same parameters, instead of repeating the costly computation, the system first checks the cache. If the result is in the cache (a 'cache hit'), it's returned directly, saving time and computational resources. If the result is not in the cache (a 'cache miss'), the calculation is performed, and the result stored in the cache for future use. This approach is particularly beneficial when the adapter is used frequently and the computations are resource-intensive.
 
+### Generic Value Adapter
+
+Adapters can be extremely useful when the system necessitates a class that can accommodate various types. In the given example, we're implementing recursive generics on Vector classes, along with a factory method to instantiate vectors with different types of parameters.
+
+Recursive generics is a technique that allows us to receive the specific instance type we invoked, bypassing the need for multiple constructors. Essentially, this approach enhances the flexibility and scalability of our code, as we can handle multiple types with a single class rather than creating a separate class for each type.
+
+However, it's important to note that this technique is not compatible with all programming languages. For instance, Salesforce Apex currently does not support the unrestricted use of Generics. This means that while the use of recursive generics can greatly enhance code flexibility in many languages, it may not be a viable solution in the context of Salesforce Apex development.
+
 If you're interested in the [udemy course](https://www.udemy.com/course/design-patterns-csharp-dotnet) by [Dmitri Nesteruk](https://www.udemy.com/user/dmitrinesteruk/).
