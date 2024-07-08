@@ -22,4 +22,18 @@ Recursive generics is a technique that allows us to receive the specific instanc
 
 However, it's important to note that this technique is not compatible with all programming languages. For instance, Salesforce Apex currently does not support the unrestricted use of Generics. This means that while the use of recursive generics can greatly enhance code flexibility in many languages, it may not be a viable solution in the context of Salesforce Apex development.
 
+### Adapter In Dependency Injection
+
+The Adapter Design Pattern plays a significant role in Dependency Injection (DI) by enhancing interface compatibility and promoting modularity. Dependency Injection decouples the creation of object dependencies from the objects themselves, allowing them to receive dependencies from an external source.
+
+When combined with the Adapter Design Pattern, Dependency Injection can:
+
+1. **Ensure Interface Compatibility**: The Adapter pattern can bridge differences between required interfaces and provided interfaces from third-party libraries or existing modules.
+2. **Enhance Decoupling and Flexibility**: Different implementations of an interface can be injected at runtime, making it easy to switch between implementations.
+3. **Facilitate Testing and Mocking**: Mock adapters conforming to the same interface as real ones can be used, enabling isolated testing.
+4. **Simplify Code Maintenance**: Separation of interface adaptation and dependency management leads to cleaner and more modular code.
+5. **Aid Legacy System Integration**: The Adapter pattern ensures compatibility between modern applications and legacy systems without extensive changes to the legacy code.
+
+By leveraging these benefits, the combination of the Adapter Design Pattern and Dependency Injection leads to a flexible, maintainable, and testable codebase.
+
 If you're interested in the [udemy course](https://www.udemy.com/course/design-patterns-csharp-dotnet) by [Dmitri Nesteruk](https://www.udemy.com/user/dmitrinesteruk/).
